@@ -1,6 +1,6 @@
 /*
 0 == domingo
-1 == segunda
+1 == segunda    
 2 == terça
 3 == quarta
 4 == quinta

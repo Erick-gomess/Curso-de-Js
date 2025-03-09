@@ -6,7 +6,7 @@
 
 body{
     background-color: #3c43ff;
-    font: normal 1em arial;
+    font: normal 1em arial, helvetica, sans-serif;
 }
 
 header{
@@ -26,12 +26,27 @@ main{
     background-color: #ffffff;
     border-radius: 10px;
     max-width: 500px;
+    height: 400px;
     box-shadow: 5px 5px 10px #000000a0;
+}
+
+.msg{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.img{
+    margin-top: 13%;
+}
+
+.foto{
+    display: block;
+    margin: auto;
 }
 
 footer{
     
-    margin: auto;
+    margin: auto ;
 }
 
 footer p{
