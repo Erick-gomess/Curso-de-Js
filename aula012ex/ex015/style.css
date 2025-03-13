@@ -28,6 +28,14 @@ main{
     max-width: 500px;
     box-shadow: 5px 5px 10px #000000a0;
 }
+button{
+    margin: auto;
+    display: block;
+    padding: 3px;
+}
+#ano{
+    padding: 3px;
+}
 
 footer{
     
