@@ -61,7 +61,7 @@ function verificar(){
     res.innerHTML = `Você é um(a) ${genero} com ${idade} anos`
     img.style.display = 'block'
     img.style.margin = 'auto'
-    res.appendChild(img)
+    res.append(img)
     
     
 
