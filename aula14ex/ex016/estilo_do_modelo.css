@@ -1,0 +1,71 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #3c43ff;
+    font: normal 1em arial, helvetica, sans-serif;
+}
+
+header{
+    
+    margin: auto;
+}
+
+header h1{
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main{
+    margin: 10px auto 10px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 5px 5px 10px #000000a0;
+}
+
+p {
+    margin: 0px auto 10px auto;
+}
+
+input{
+    padding: 3px;
+}
+
+button{
+    padding: 5px;
+}
+
+.res{
+    margin-top: 10px;
+}
+
+.msg{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.img{
+    margin-top: 13%;
+}
+
+.foto{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    
+    margin: auto ;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
