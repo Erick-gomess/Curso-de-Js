@@ -1,38 +1,23 @@
-function carregar(){
-    let fundo = document.querySelector('.fundo')
-    let msg = document.querySelector('.msg')
-    let img = document.querySelector('.foto')
-    let hora = new Date()
-    hora = hora.getHours()
-    let minutos = new Date()
-    minutos = minutos.getMinutes()
+// cria o evento que chama a função da tabuada quando clicar no botão 
+const tabuada = document.getElementById('botao')
+tabuada.addEventListener('click', tabuadas)   
 
-    if(hora >= 6 && hora < 12){
-        //bom dia
-        img.src = 'imagens/manha.png'
-        fundo.style.backgroundColor = ' #e2cd9f'
-        msg.innerHTML = `Agora são ${hora}:${minutos}<br> Bom dia flor do dia!`
-    }
-    else if(hora >= 12 && hora <18){
-        //boa tarde
-        img.src = 'imagens/tarde.png'
-        fundo.style.backgroundColor = ' #ffba2f'
-        msg.innerHTML = `Agora são ${hora}:${minutos}<br> Boa tarde!`
-    }
-    else if(hora >= 18 && hora <= 23 ){
-        //boa noite
-        img.src = 'imagens/noite.png'
-        fundo.style.backgroundColor = ' #141414'
-        msg.innerHTML = `Agora são ${hora}:${minutos}<br> Boa noite!`
+//função pra criar uma tabuada
+function tabuadas(){
+    let numero = Number(document.querySelector('#tb').value)
+    let res = document.querySelector('.res')
+    
+    let tb = document.querySelector('#tab')
+    if(numero == 0){
+        alert('[Erro] digite um número')
     }
     else{
-        msg.innerHTML = `Agora são ${hora}:${minutos}<br> Madrugando rapaz?`
-        img.src = 'imagens/noite.png'
-        fundo.style.backgroundColor = 'rgb(0, 0, 0)'
+        tb.innerHTML = ''
+        for(let i = 0;i <= 10;i++){
+        let tab = document.createElement('option')
+        tab.text = `${numero} X ${i} = ${numero * i}`
+        tb.appendChild(tab)
     }
-
-    if(hora == 0){
-        msg.innerHTML = `Agora são ${hora}${hora}:${minutos}<br> Madrugando rapaz?`
-        //pra ficar igual ao relógio, que meia noite marca '00:00'
     }
+    
 }

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo_do_modelo.css">
-    <script src="script.js"></script>
 </head>
-<body class="fundo" onload="carregar()">
-    <header><h1>Horário</h1></header>
+<body>
+    <header><h1>Tabuada</h1></header>
     <main>
-        <div class="msg">
+        <div>
+            Número: <input type="number" name="tb" id="tb"> 
+            <button id="botao">Gerar tabuada</button>
         </div>
-        <div class="img">
-            <img class="foto" src="##" alt="##">
+            
+        <div class="res">
+            <select name="tab" id="tab" size="10">
+                <option value="">Criando tabuada...</option>
+            </select>
         </div>
     </main>
     <footer><p>&copy;Erick para CursoemVideo</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
