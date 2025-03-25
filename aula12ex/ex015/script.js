@@ -62,10 +62,4 @@ function verificar(){
     img.style.display = 'block'
     img.style.margin = 'auto'
     res.append(img)
-    
-    
-
-
-
-
 }   
